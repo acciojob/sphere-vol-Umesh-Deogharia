@@ -1,9 +1,7 @@
 function volume_sphere() {
     //Write your code here
 let Radius = document.getElementById('radius');
-
 let rvalue = parseFloat(radius.value);
-
 	if (isNaN(rvalue) || rvalue<0) {
 		document.getElementById('volume').value = 'NaN';
 	}
@@ -12,7 +10,5 @@ let rvalue = parseFloat(radius.value);
 		volume = volume.toFixed(4);
 		document.getElementById('volume').value = volume;
 	}
-	
 } 
-
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
