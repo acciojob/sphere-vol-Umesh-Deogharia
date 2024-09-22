@@ -9,7 +9,7 @@ let rvalue = parseFloat(radius.value);
 	}
 	else{
 		let volume = 4/3 * Math.PI * Math.pow(rvalue , 3);
-		volume = volume.tofixed(4);
+		volume = volume.toFixed(4);
 		document.getElementById('volume').value = volume;
 	}
 	
